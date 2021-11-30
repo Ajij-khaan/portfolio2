@@ -36,7 +36,7 @@ const MyProjects = () => {
                     "depth": 100,
                     "modifier": 1,
                     "slideShadows": true
-                }} pagination={true} className="mySwiper">
+                }} pagination={true} className="mySwiper " >
 
                     <SwiperSlide>
                         <img src="https://i.ibb.co/VVLBVh3/tour.png" alt="" />
