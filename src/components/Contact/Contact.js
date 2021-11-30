@@ -1,7 +1,6 @@
 import Button from '@restart/ui/esm/Button';
 import React, { useRef } from 'react';
 import { Col, Row } from 'react-bootstrap';
-import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 
 import { ToastContainer, toast } from 'react-toastify';
@@ -59,7 +58,7 @@ const Contact = () => {
 
     return (
 
-        <div className="">
+        <div id="contact">
             <form ref={form} onSubmit={sendEmail} className="text-start " >
                 <div className="fw-bolder fs-1 text-white text-center">LETS DISCUSS</div>
 

@@ -4,11 +4,11 @@ import { Col, Container, Image, Row } from 'react-bootstrap';
 
 const Banner = () => {
     return (
-        <div className="global-bg">
+        <div id="home" className="global-bg">
             <Container>
                 <Row className="text-start pt-5">
                     <Col>
-                        <h3 className="text-white">Hi There,</h3>
+                        <h3 className="text-white">Hi,</h3>
                         <h1 className="text-white pt-3 ">I'M <span className="fw-bolder text-green">AJIJ KHAN.</span></h1>
                         <h1 className="text-white pt-3 fw-bolder">MERN Stack Developer</h1>
                         <div className="button">

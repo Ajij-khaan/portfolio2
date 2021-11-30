@@ -6,12 +6,12 @@ import ContactInfo from '../ContactInfo/ContactInfo';
 const Footer = () => {
     return (
         <div className="global-bg">
-            <Container className="py-5 mt-5">
+            <Container className="py-5 pt-5">
                 <Row className="py-5">
-                    <Col sm={4} md={4}>
+                    <Col sm={4} md={5}>
                         <ContactInfo></ContactInfo>
                     </Col>
-                    <Col sm={8} md={8}>
+                    <Col sm={8} md={7}>
                         <Contact></Contact>
                     </Col>
                 </Row>
