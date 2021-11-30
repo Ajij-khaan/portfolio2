@@ -11,6 +11,8 @@ import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 
 import './MyProjects.css'
+import { Container } from 'react-bootstrap';
+
 
 
 SwiperCore.use([EffectCoverflow, Pagination]);
@@ -25,42 +27,45 @@ const MyProjects = () => {
 
     return (
         <div id="projects" className="global-bg pt-5" >
-            <h1 id="projects" className="fw-bolder text-white text-uppercase pt-5" data-aos="zoom-in-down">My Latest Work</h1>
-            <Swiper data-aos="zoom-in-down" effect={'coverflow'} grabCursor={true} centeredSlides={true} slidesPerView={'auto'} coverflowEffect={{
-                "rotate": 50,
-                "stretch": 0,
-                "depth": 100,
-                "modifier": 1,
-                "slideShadows": true
-            }} pagination={true} className="mySwiper">
+            <Container>
 
-                <SwiperSlide>
-                    <img src="https://i.ibb.co/VVLBVh3/tour.png" alt="" />
-                    <p className="mt-4 text-white">Tour Buddy - a Travel Agency Website</p>
-                    <div className="button">
-                        <button className="btn rounded-pill mx-2 my-1">See Project</button>
-                    </div>
+                <h1 id="projects" className="fw-bolder text-white text-uppercase pt-5" data-aos="zoom-in-down">My Latest Work</h1>
+                <Swiper data-aos="zoom-in-down" effect={'coverflow'} initialSlide={1} grabCursor={true} centeredSlides={true} slidesPerView={'auto'} coverflowEffect={{
+                    "rotate": 50,
+                    "stretch": 0,
+                    "depth": 100,
+                    "modifier": 1,
+                    "slideShadows": true
+                }} pagination={true} className="mySwiper">
 
-                </SwiperSlide>
+                    <SwiperSlide>
+                        <img src="https://i.ibb.co/VVLBVh3/tour.png" alt="" />
+                        <p className="mt-4 text-white">Tour Buddy - a Travel Agency Website</p>
+                        <div className="button">
+                            <button className="btn rounded-pill mx-2 my-1">See Project</button>
+                        </div>
 
-                <SwiperSlide>
-                    <img src="https://i.ibb.co/ZmVZ0Ff/carhub.png" alt="" />
-                    <div className="button">
-                        <p className="pt-3 text-white">Car House - a Car Dealer Agency Website</p>
-                        <button className="btn bg-green rounded-pill mx-2 my-1">See Project</button>
+                    </SwiperSlide>
 
-                    </div>
-                </SwiperSlide>
+                    <SwiperSlide>
+                        <img src="https://i.ibb.co/ZmVZ0Ff/carhub.png" alt="" />
+                        <div className="button">
+                            <p className="pt-3 text-white">Car House - a Car Dealer Agency Website</p>
+                            <button className="btn bg-green rounded-pill mx-2 my-1">See Project</button>
 
-                <SwiperSlide>
-                    <img src="https://i.ibb.co/G3VBZ4B/medtim.png" alt="" />
-                    <div className="button">
-                        <p className="pt-3 text-white">Med Time - a Telemedicine Website</p>
-                        <button className="btn bg-green rounded-pill mx-2 my-1">See Project</button>
-                    </div>
-                </SwiperSlide>
+                        </div>
+                    </SwiperSlide>
 
-            </Swiper>
+                    <SwiperSlide>
+                        <img src="https://i.ibb.co/G3VBZ4B/medtim.png" alt="" />
+                        <div className="button">
+                            <p className="pt-3 text-white">Med Time - a Telemedicine Website</p>
+                            <button className="btn bg-green rounded-pill mx-2 my-1">See Project</button>
+                        </div>
+                    </SwiperSlide>
+
+                </Swiper>
+            </Container>
         </div>
     );
 };

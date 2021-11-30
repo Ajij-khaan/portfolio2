@@ -16,3 +16,7 @@
     font-weight:bold ;
     color: black;
 }
+
+.imgW img{
+    width: 100%;
+}
