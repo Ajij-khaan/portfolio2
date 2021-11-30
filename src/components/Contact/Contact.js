@@ -61,7 +61,7 @@ const Contact = () => {
 
         <div className="">
             <form ref={form} onSubmit={sendEmail} className="text-start " >
-                <div className="fw-bold text-white fs-1 text-center">Get in Touch</div>
+                <div className="fw-bolder fs-1 text-white text-center">LETS DISCUSS</div>
 
                 <Row className="pb-3">
                     <Col>

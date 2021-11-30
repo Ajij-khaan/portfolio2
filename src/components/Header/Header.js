@@ -14,7 +14,8 @@ const Header = () => {
                     <Nav className="ms-auto">
                         <Nav.Link as={HashLink} to="/" className=" fw-bold text-white">HOME</Nav.Link>
                         <Nav.Link as={HashLink} to="/" className=" fw-bold text-white">ABOUT</Nav.Link>
-                        <Nav.Link as={HashLink} to="/" className=" fw-bold text-white">RESUME</Nav.Link>
+                        <Nav.Link className=" fw-bold text-white" href="https://drive.google.com/file/d/1F3N2jWk8TB3v0GFvvT6I7hXRs4wabTqf/view" target="_blank" >RESUME</Nav.Link>
+
                         <Nav.Link as={HashLink} to="/" className=" fw-bold text-white"> CONTACT</Nav.Link>
 
                     </Nav>
