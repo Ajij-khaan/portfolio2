@@ -102,7 +102,7 @@ const Contact = () => {
                     <br /> */}
 
 
-                <Button className=" bg-green w-100 ">  <input type="submit" className="btn fw-bold" /></Button>
+                <Button className=" bg-green w-100 ">  <input type="submit" className="btn fw-bold w-100" /></Button>
                 <ToastContainer
                     position="top-center"
                     autoClose={1500}
