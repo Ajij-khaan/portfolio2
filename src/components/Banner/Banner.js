@@ -1,19 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Col, Container, Image, Row } from 'react-bootstrap';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Banner = () => {
+
+    useEffect(() => {
+        AOS.init(({ duration: 2000 }));
+
+    }, [])
+
     return (
         <div id="home" className="global-bg">
             <Container>
                 <Row className="text-start pt-5">
                     <Col>
-                        <h3 className="text-white">Hi,</h3>
-                        <h1 className="text-white pt-3 ">I'M <span className="fw-bolder text-green">AJIJ KHAN.</span></h1>
-                        <h1 className="text-white pt-3 fw-bolder">MERN Stack Developer</h1>
+                        <h3 className="text-white" data-aos="zoom-in-right">Hi,</h3>
+                        <h1 className="text-white pt-3" data-aos="zoom-in-right">I'M <span className="fw-bolder text-green">AJIJ KHAN.</span></h1>
+                        <h1 className="text-white pt-3 fw-bolder" data-aos="zoom-in-right">MERN Stack Developer</h1>
                         <div className="button">
                             <a href="https://drive.google.com/file/d/1F3N2jWk8TB3v0GFvvT6I7hXRs4wabTqf/view?usp=sharing" target="_blank">
-                                <button className="mt-5 py-2 px-4 rounded-pill fw-bold">GET RESUME</button></a>
+                                <button className="mt-5 py-2 px-4 rounded-pill fw-bold" data-aos="zoom-in-right">GET RESUME</button></a>
                         </div>
                     </Col>
                     <Col className="text-center" >

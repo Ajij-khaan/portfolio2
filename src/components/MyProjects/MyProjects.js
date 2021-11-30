@@ -1,5 +1,6 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Swiper, SwiperSlide } from 'swiper/react/swiper-react.js';
 import SwiperCore, { EffectCoverflow, Pagination } from 'swiper';
 
@@ -16,10 +17,16 @@ SwiperCore.use([EffectCoverflow, Pagination]);
 
 
 const MyProjects = () => {
+
+    useEffect(() => {
+        AOS.init(({ duration: 2000 }));
+
+    }, [])
+
     return (
-        <div id="projects" className="global-bg pt-5">
-            <h1 id="projects" className="fw-bolder text-white text-uppercase pt-5">My Latest Work</h1>
-            <Swiper effect={'coverflow'} grabCursor={true} centeredSlides={true} slidesPerView={'auto'} coverflowEffect={{
+        <div id="projects" className="global-bg pt-5" >
+            <h1 id="projects" className="fw-bolder text-white text-uppercase pt-5" data-aos="zoom-in-down">My Latest Work</h1>
+            <Swiper data-aos="zoom-in-down" effect={'coverflow'} grabCursor={true} centeredSlides={true} slidesPerView={'auto'} coverflowEffect={{
                 "rotate": 50,
                 "stretch": 0,
                 "depth": 100,

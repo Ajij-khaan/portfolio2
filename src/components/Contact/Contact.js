@@ -1,17 +1,22 @@
 import Button from '@restart/ui/esm/Button';
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Contact = () => {
     const form = useRef();
 
+    useEffect(() => {
+        AOS.init(({ duration: 2000 }));
 
+    }, [])
     const notify = () => toast.success('Message Send Successfully', {
         position: "top-center",
         autoClose: 1500,
@@ -56,9 +61,12 @@ const Contact = () => {
 
     // }
 
+
     return (
 
-        <div id="contact">
+        <div id="contact" data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
             <form ref={form} onSubmit={sendEmail} className="text-start " >
                 <div className="fw-bolder fs-1 text-white text-center">LETS DISCUSS</div>
 
