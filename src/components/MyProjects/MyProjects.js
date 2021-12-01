@@ -11,7 +11,8 @@ import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 
 import './MyProjects.css'
-import { Container } from 'react-bootstrap';
+import { Container, Nav } from 'react-bootstrap';
+import { HashLink } from 'react-router-hash-link';
 
 
 
@@ -22,7 +23,6 @@ const MyProjects = () => {
 
     useEffect(() => {
         AOS.init(({ duration: 2000 }));
-
     }, [])
 
     return (
@@ -42,7 +42,9 @@ const MyProjects = () => {
                         <img src="https://i.ibb.co/VVLBVh3/tour.png" alt="" />
                         <p className="mt-4 text-white">Tour Buddy - a Travel Agency Website</p>
                         <div className="button">
-                            <button className="btn rounded-pill mx-2 my-1">See Project</button>
+
+                            <Nav.Link as={HashLink} to="/services/1" ><button className="btn rounded-pill mx-2 my-1">See Project</button></Nav.Link>
+
                         </div>
 
                     </SwiperSlide>
@@ -51,7 +53,7 @@ const MyProjects = () => {
                         <img src="https://i.ibb.co/ZmVZ0Ff/carhub.png" alt="" />
                         <div className="button">
                             <p className="pt-3 text-white">Car House - a Car Dealer Agency Website</p>
-                            <button className="btn bg-green rounded-pill mx-2 my-1">See Project</button>
+                            <Nav.Link as={HashLink} to="/services/2" ><button className="btn rounded-pill mx-2 my-1">See Project</button></Nav.Link>
 
                         </div>
                     </SwiperSlide>
@@ -60,7 +62,7 @@ const MyProjects = () => {
                         <img src="https://i.ibb.co/G3VBZ4B/medtim.png" alt="" />
                         <div className="button">
                             <p className="pt-3 text-white">Med Time - a Telemedicine Website</p>
-                            <button className="btn bg-green rounded-pill mx-2 my-1">See Project</button>
+                            <Nav.Link as={HashLink} to="/services/3" ><button className="btn rounded-pill mx-2 my-1">See Project</button></Nav.Link>
                         </div>
                     </SwiperSlide>
 

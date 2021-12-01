@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Tour Buddy",
+        "tagline": "a Travel agency website",
+        "imgUrl": "https://i.ibb.co/VVLBVh3/tour.png",
+        "bullet1": "This is a full-stack travel agency website where users book a tour package.",
+        "bullet2": "To book a tour user must be logged in.",
+        "bullet3": "Admin can manage all orders and packages and add new tour package.",
+        "technoligies": "React   JS   Router   ES6   Firebase   Private   Route   HTML   CSS   Bootstrap   Node JS    Express   MongoDB",
+        "live": "https://tour-buddy-28.web.app/",
+        "githubClient": "https://github.com/Ajij-khaan/car-house-client",
+        "githubServer": "https://github.com/Ajij-khaan/car-house-server1",
+        "ss1": "https://i.ibb.co/Rj6x0yf/1.png",
+        "ss2": "https://i.ibb.co/G2pQtKY/2.png",
+        "ss3": "https://i.ibb.co/RCzVH7X/3.png"
+    },
+    {
+        "id": 2,
+        "name": "Car House",
+        "tagline": "a Car Dealer website",
+        "imgUrl": "https://i.ibb.co/VVLBVh3/tour.png",
+        "bullet1": "This is a full-stack travel agency website where users book a tour package.",
+        "bullet2": "To book a tour user must be logged in.",
+        "bullet3": "Admin can manage all orders and packages and add new tour package.",
+        "technoligies": "React   JS   Router   ES6   Firebase   Admin Route   Private Route   HTM    CSS    Bootstrap   Node JS   Express JS   MongoDB",
+        "live": "https://car-house-28.web.app/home",
+        "githubClient": "https://github.com/Ajij-khaan/car-house-client",
+        "githubServer": "https://github.com/Ajij-khaan/car-house-server1",
+        "ss1": "https://i.ibb.co/d4pv47t/5.png",
+        "ss2": "https://i.ibb.co/wrDB1x7/6.png",
+        "ss3": "https://i.ibb.co/XSgTTmz/7.png"
+    },
+    {
+        "id": 3,
+        "name": "Med Time",
+        "tagline": "a Tele Medicine website",
+        "imgUrl": "https://i.ibb.co/VVLBVh3/tour.png",
+        "bullet1": "This is a full-stack travel agency website where users book a tour package.",
+        "bullet2": "To book a tour user must be logged in.",
+        "bullet3": "Admin can manage all orders and packages and add new tour package.",
+        "technoligies": "React   JS   Router   ES6   Firebas  e Private Route   HTML   CSS   Bootstrap",
+        "live": "https://med-time-c75fe.web.app/",
+        "githubClient": "https://github.com/Ajij-khaan/med-time",
+        "githubServer": "",
+        "ss1": "https://i.ibb.co/Jry9WHN/8.png",
+        "ss2": "https://i.ibb.co/yV4cZd4/9.png",
+        "ss3": "https://i.ibb.co/BCJhLtH/10.png"
+    }
+]

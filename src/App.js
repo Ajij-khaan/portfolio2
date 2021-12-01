@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
+import Services from './components/Services/Services';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="home" element={<Home />} />
+          <Route path="services/:serviceId" element={<Services />} />
         </Routes>
       </BrowserRouter>
     </div>
