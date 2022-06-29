@@ -43,6 +43,17 @@ const Contact = () => {
       progress: undefined,
     });
 
+  const FillNotify = () =>
+    toast.error("Please, fill all the box", {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+
   const PhoneNotify = () =>
     toast.error("You have entered an invalid Phone Number address", {
       position: "top-center",
@@ -100,7 +111,7 @@ const Contact = () => {
           );
       }
     } else {
-      alert("please fill all the info!!!");
+      FillNotify();
       return;
     }
   };

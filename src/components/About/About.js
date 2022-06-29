@@ -36,7 +36,8 @@ const About = () => {
               This is Ajij Khan. I am a front-end developer. I create responsive
               websites for my clients using HTML, CSS, JavaScript, React JS,
               React-Router, Bootstrap, Tailwind CSS & Material UI. Besides, I
-              use Node JS, Express JS & MongoDB for backend development.
+              use Node JS, Express JS & MongoDB for backend development. Want to
+              know more about me? Checkout my resume.
             </p>
           </Col>
         </Row>
